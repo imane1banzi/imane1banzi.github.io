@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Imane | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #1f2937;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        section {
+            padding: 100px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .hero {
+            text-align: center;
+            padding-top: 140px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: #1f2937;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: #2563eb;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1f2937;
+            color: #fff;
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <strong>Imane</strong>
+        <div>
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero hidden">
+    <h1>Développeuse Web & Java</h1>
+    <p>Java | Spring Boot | Angular | Laravel</p>
+    <a href="#projects" class="btn">Voir mes projets</a>
+</section>
+
+<section id="about" class="hidden">
+    <h2>À propos de moi</h2>
+    <p>
+        Développeuse passionnée avec une expérience en Java, Spring Boot, Angular et Laravel.
+        J’aime créer des applications performantes, propres et bien structurées.
+    </p>
+</section>
+
+<section id="skills" class="hidden">
+    <h2>Compétences</h2>
+    <div class="skills">
+        <div class="card">Java / Spring Boot</div>
+        <div class="card">Angular</div>
+        <div class="card">Laravel / PHP</div>
+        <div class="card">HTML / CSS / JavaScript</div>
+        <div class="card">Docker</div>
+        <div class="card">PostgreSQL / MySQL</div>
+    </div>
+</section>
+
+<section id="projects" class="hidden">
+    <h2>Projets</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>SmartOP</h3>
+            <p>Application de gestion des opérations réseau et système.</p>
+        </div>
+        <div class="card">
+            <h3>E-Bank</h3>
+            <p>Application bancaire en Java Spring & Angular.</p>
+        </div>
+        <div class="card">
+            <h3>Lifestyle Planning Tool</h3>
+            <p>Application de gestion financière personnelle.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="hidden">
+    <h2>Contact</h2>
+    <p>Email : imane@email.com</p>
+    <p>GitHub : github.com/imane1banzi</p>
+</section>
+
+<footer>
+    © 2026 - Imane | Portfolio
+</footer>
+
+<script>
+    const elements = document.querySelectorAll('.hidden');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
