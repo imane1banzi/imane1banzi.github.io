@@ -14,7 +14,7 @@
   --pink-light: #F25C9E;
   --violet: #7C3AED;
   --violet-light: #B79CFF;
-  --container: 1240px;
+  --container: 1288px; /* 1240px de contenu + 2 × 24px de marge */
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -29,6 +29,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 a { color: var(--text); }
@@ -132,7 +133,7 @@ img { display: block; max-width: 100%; }
 .nav__cta { background: var(--accent); color: var(--bg) !important; padding: 12px 22px; border-radius: 999px; font-weight: 700; }
 
 /* Hero */
-.hero { position: relative; }
+.hero { position: relative; overflow-x: clip; }
 .deco-ring {
   position: absolute;
   width: 620px; height: 620px;
