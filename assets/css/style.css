@@ -309,7 +309,6 @@ img { display: block; max-width: 100%; }
 .contact-card p { margin: 0; color: var(--text-muted); }
 .contact-links { display: flex; flex-direction: column; gap: 6px; }
 .contact-links a:not(.btn) { display: flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 600; min-height: 44px; overflow-wrap: anywhere; }
-.contact-links .btn { margin-top: 14px; align-self: flex-start; }
 
 /* Footer */
 .footer { border-top: 1px solid var(--line); }

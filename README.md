@@ -9,7 +9,7 @@ Site statique en HTML, CSS et JavaScript, sans framework ni étape de build.
 - **Projets techniques** : Ebank, Chatbot RAG, SmartOP, Lifestyle Planning Tool, Agent IA pour Jira
 - **Sites réalisés** : MyShop (en ligne sur [my-shop.cloud](https://my-shop.cloud/)), Maison Ambre, Maison Zitoun
 - **Compétences**
-- **Contact** et téléchargement du CV
+- **Contact**
 
 ## Structure
 
@@ -20,7 +20,6 @@ portfolio/
 │   ├── css/style.css
 │   ├── js/main.js        # modale vidéo
 │   ├── img/              # captures des sites + favicon
-│   ├── cv/               # CV-Imane-Banzi.pdf
 │   └── videos/           # myshop.mp4, maison-ambre.mp4, maison-zitoun.mp4
 ```
 
@@ -38,7 +37,6 @@ python -m http.server 8000
 
 | Fichier | Utilisé par |
 |---|---|
-| `assets/cv/CV-Imane-Banzi.pdf` | boutons « Télécharger mon CV » |
 | `assets/videos/myshop.mp4` | vidéo MyShop |
 | `assets/videos/maison-ambre.mp4` | vidéo Maison Ambre |
 | `assets/videos/maison-zitoun.mp4` | vidéo Maison Zitoun |
