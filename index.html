@@ -142,41 +142,51 @@
         </div>
       </article>
 
-      <!-- Chatbot RAG -->
+      <!-- Chatbot RAG · Nova -->
       <article class="card">
-        <div class="mock" aria-hidden="true">
-          <div class="mock__bar">
+        <div class="mock nova" aria-hidden="true">
+          <div class="nova__bar">
             <span class="mock__dot" style="background: var(--pink)"></span><span class="mock__dot" style="background: var(--accent)"></span><span class="mock__dot" style="background: var(--cyan)"></span>
-            <span class="mock__url">localhost:8000/chat</span>
+            <span class="nova__url">nova · support IT</span>
           </div>
-          <div style="display: flex; min-height: 300px">
-            <div style="width: 34%; flex: none; border-right: 1px solid #E2DAEE; padding: 16px 12px; display: flex; flex-direction: column; gap: 8px">
-              <span style="font-weight: 800; font-size: 12px; padding: 0 4px 4px">Documents</span>
-              <div class="mock-box" style="display: flex; align-items: center; gap: 8px; border-color: var(--violet); padding: 8px"><span style="width: 18px; height: 22px; border-radius: 4px; background: var(--pink); flex: none"></span><span style="font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">contrat_service.pdf</span></div>
-              <div style="display: flex; align-items: center; gap: 8px; padding: 8px"><span style="width: 18px; height: 22px; border-radius: 4px; background: #D6CCE6; flex: none"></span><span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap">rapport_annuel.pdf</span></div>
-              <div style="display: flex; align-items: center; gap: 8px; padding: 8px"><span style="width: 18px; height: 22px; border-radius: 4px; background: #D6CCE6; flex: none"></span><span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap">guide_interne.pdf</span></div>
-              <span style="margin-top: auto; border: 1px dashed #B9AACF; border-radius: 10px; padding: 8px; text-align: center; color: #5C4C75; font-weight: 600">+ Importer un PDF</span>
-            </div>
-            <div style="flex: 1; min-width: 0; padding: 16px; display: flex; flex-direction: column; gap: 12px">
-              <div class="mock-dark" style="align-self: flex-end; max-width: 80%; border-radius: 14px 14px 4px 14px; padding: 9px 12px">Quelle est la durée du préavis en cas de résiliation ?</div>
-              <div class="mock-box" style="align-self: flex-start; max-width: 88%; border-radius: 14px 14px 14px 4px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px">
-                <span>Le préavis est de 30 jours à compter de la notification écrite, sauf accord contraire entre les parties.</span>
-                <span class="pill" style="align-self: flex-start; border: 1px solid var(--violet); color: #5B21B6; padding: 2px 10px; font-weight: 700">Source · contrat_service.pdf · p. 4</span>
+          <div class="nova__app">
+            <div class="nova__main">
+              <div class="nova__top">
+                <span class="nova__brand"><span class="nova__logo"></span>Nova</span>
+                <span class="nova__pill">Llama 3.1 · Groq</span>
               </div>
-              <div class="mock-box" style="margin-top: auto; display: flex; align-items: center; gap: 8px; border-radius: 999px; padding: 6px 6px 6px 14px">
-                <span style="flex: 1; color: #6F6087">Posez une question sur vos documents…</span>
-                <span style="width: 26px; height: 26px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1C0C2E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <div class="nova__user">Mot de passe expiré, comment faire ?</div>
+              <div class="nova__head"><span class="nova__logo nova__logo--sm"></span><strong>Nova</strong>· d’après la documentation IT</div>
+              <div class="nova__step is-done"><span class="nova__num">1</span><span>Ouvre Jira et connecte-toi</span><span class="nova__check"></span></div>
+              <div class="nova__step is-done"><span class="nova__num">2</span><span>Clique sur « Créer »</span><span class="nova__check"></span></div>
+              <div class="nova__step"><span class="nova__num">3</span><span>Type de ticket : « Demande »</span><span class="nova__check"></span></div>
+              <span class="nova__chip">jira.md</span>
+              <div class="nova__input"><span>Posez votre question…</span><span class="nova__send"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+            </div>
+            <div class="nova__sources">
+              <span class="nova__label">Sources utilisées</span>
+              <div class="nova__card">
+                <span class="nova__file">jira.md</span>
+                <span class="nova__text">Créer un ticket Jira – problème de <mark>mot de passe expiré</mark> : choisis « Demande » puis indique le résumé…</span>
+                <span class="nova__rel">Pertinence <span class="nova__meter"><span style="width: 87%"></span></span>87 %</span>
+              </div>
+              <div class="nova__card">
+                <span class="nova__file">jira.md</span>
+                <span class="nova__text">Résumé : « <mark>Mot de passe expiré</mark> – accès application ». Détaille la situation…</span>
+                <span class="nova__rel">Pertinence <span class="nova__meter"><span style="width: 64%"></span></span>64 %</span>
               </div>
             </div>
           </div>
         </div>
         <div class="card__body">
-          <span class="card__kicker" style="color: var(--accent)">IA · Recherche sémantique</span>
-          <h3>Chatbot RAG</h3>
-          <p>Chatbot intelligent qui permet d’interroger des documents PDF grâce à la recherche sémantique, avec la source de chaque réponse.</p>
+          <span class="card__kicker" style="color: var(--accent)">IA · RAG · Support IT</span>
+          <h3>Nova — Chatbot RAG</h3>
+          <p>Assistant de support IT qui répond uniquement à partir des documents de l’entreprise : réponses étape par étape, sources citées (fichier + page) et import de PDF à chaud depuis l’interface.</p>
           <div class="chips">
-            <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">LangChain</span><span class="chip">LLM · RAG</span>
+            <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">LangChain</span><span class="chip">FAISS</span><span class="chip">Llama 3.1 · Groq</span>
           </div>
+          <a href="https://github.com/imane1banzi/CHATBOT-ENTREPRISE" class="card__link" target="_blank" rel="noopener">Voir le code sur GitHub
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
     </div>
