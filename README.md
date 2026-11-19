@@ -7,7 +7,7 @@ Site statique en HTML, CSS et JavaScript, sans framework ni étape de build.
 ## Sections
 
 - **Projets techniques** : Ebank, Chatbot RAG, SmartOP, Lifestyle Planning Tool, Agent IA pour Jira
-- **Sites réalisés** : MyShop (en ligne sur [my-shop.cloud](https://my-shop.cloud/)), Maison Ambre, Maison Zitoun
+- **Sites réalisés** : MyShop (en ligne sur [my-shop.cloud](https://my-shop.cloud/)), Maison Ambre, Maison Zitoun, Maison Nour, Dar Lazuli
 - **Compétences**
 - **Contact**
 
@@ -20,7 +20,7 @@ portfolio/
 │   ├── css/style.css
 │   ├── js/main.js        # modale vidéo
 │   ├── img/              # captures des sites + favicon
-│   └── videos/           # myshop.mp4, maison-ambre.mp4, maison-zitoun.mp4
+│   └── videos/           # myshop, maison-ambre, maison-zitoun, maison-nour, dar-lazuli (.mp4)
 ```
 
 ## Lancer en local
@@ -40,6 +40,8 @@ python -m http.server 8000
 | `assets/videos/myshop.mp4` | vidéo MyShop |
 | `assets/videos/maison-ambre.mp4` | vidéo Maison Ambre |
 | `assets/videos/maison-zitoun.mp4` | vidéo Maison Zitoun |
+| `assets/videos/maison-nour.mp4` | vidéo Maison Nour |
+| `assets/videos/dar-lazuli.mp4` | vidéo Dar Lazuli |
 
 > GitHub Pages refuse les fichiers de plus de 100 Mo : compresser les vidéos (idéalement < 20 Mo chacune).
 
