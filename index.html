@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=2026-11-18">
+<link rel="stylesheet" href="assets/css/style.css?v=2026-11-19">
 </head>
 <body>
 
@@ -60,10 +60,12 @@
     </div>
 
     <div class="hero__visual">
-      <div class="hero__shots">
-        <img src="assets/img/maison-ambre.jpg" alt="Site Maison Ambre sur mobile">
-        <img src="assets/img/myshop-accueil.jpg" alt="Page d’accueil de la boutique MyShop">
-        <img src="assets/img/maison-zitoun.jpg" alt="Site Maison Zitoun sur mobile">
+      <div class="hero__portrait">
+        <picture>
+          <source type="image/webp" srcset="assets/img/imane-banzi-600.webp 600w, assets/img/imane-banzi-900.webp 900w" sizes="(max-width: 640px) 80vw, 440px">
+          <img src="assets/img/imane-banzi-900.jpg" srcset="assets/img/imane-banzi-600.jpg 600w, assets/img/imane-banzi-900.jpg 900w" sizes="(max-width: 640px) 80vw, 440px" width="900" height="1125" alt="Portrait d’Imane Banzi, développeuse Fullstack" fetchpriority="high">
+        </picture>
+        <img class="hero__phone" src="assets/img/myshop-accueil.jpg" alt="Page d’accueil de la boutique MyShop" width="300" height="400">
       </div>
       <div class="toast">
         <span class="toast__icon" aria-hidden="true">
@@ -447,6 +449,6 @@
   </div>
 </dialog>
 
-<script src="assets/js/main.js?v=2026-11-18"></script>
+<script src="assets/js/main.js?v=2026-11-19"></script>
 </body>
 </html>
